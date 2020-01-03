@@ -48,7 +48,7 @@
             this.Tools1.FlatAppearance.BorderSize = 0;
             this.Tools1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Tools1.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Tools1.Location = new System.Drawing.Point(13, 49);
+            this.Tools1.Location = new System.Drawing.Point(15, 45);
             this.Tools1.Name = "Tools1";
             this.Tools1.Size = new System.Drawing.Size(75, 34);
             this.Tools1.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.Tools2.FlatAppearance.BorderSize = 0;
             this.Tools2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Tools2.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Tools2.Location = new System.Drawing.Point(87, 49);
+            this.Tools2.Location = new System.Drawing.Point(89, 45);
             this.Tools2.Name = "Tools2";
             this.Tools2.Size = new System.Drawing.Size(75, 34);
             this.Tools2.TabIndex = 2;
@@ -78,7 +78,7 @@
             this.ClockTab.FlatAppearance.BorderSize = 0;
             this.ClockTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClockTab.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ClockTab.Location = new System.Drawing.Point(162, 49);
+            this.ClockTab.Location = new System.Drawing.Point(164, 45);
             this.ClockTab.Name = "ClockTab";
             this.ClockTab.Size = new System.Drawing.Size(75, 34);
             this.ClockTab.TabIndex = 3;
