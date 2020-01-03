@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DELME_CustomTabControl", "DELME_CustomTabControl\DELME_CustomTabControl.csproj", "{70E568B7-FF5C-46CF-AA86-67817F100982}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E568B7-FF5C-46CF-AA86-67817F100982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E568B7-FF5C-46CF-AA86-67817F100982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E568B7-FF5C-46CF-AA86-67817F100982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E568B7-FF5C-46CF-AA86-67817F100982}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A52BF75-8DBB-4C30-8078-C08923005B18}
+	EndGlobalSection
+EndGlobal
