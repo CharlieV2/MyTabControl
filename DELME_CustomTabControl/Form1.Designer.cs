@@ -47,6 +47,7 @@
             // Tools1
             // 
             this.Tools1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(165)))), ((int)(((byte)(240)))));
+            this.Tools1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
             this.Tools1.FlatAppearance.BorderSize = 0;
             this.Tools1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Tools1.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -62,6 +63,7 @@
             // Tools2
             // 
             this.Tools2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
+            this.Tools2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
             this.Tools2.FlatAppearance.BorderSize = 0;
             this.Tools2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Tools2.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -77,6 +79,7 @@
             // ClockTab
             // 
             this.ClockTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
+            this.ClockTab.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
             this.ClockTab.FlatAppearance.BorderSize = 0;
             this.ClockTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClockTab.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
