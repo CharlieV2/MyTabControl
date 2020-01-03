@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DELME_CustomTabControl.Properties;
 
 namespace DELME_CustomTabControl
 {
     public partial class Form1 : Form
     {
         Button CurrentTabSender;
+        bool OpenedComboBox = true;
 
         Tabs_tab1 tab1 = new Tabs_tab1();
         Tabs_tab2 tab2 = new Tabs_tab2();
@@ -30,15 +32,15 @@ namespace DELME_CustomTabControl
         public void InitializeTabs()
         {
             tab1.Location = new Point(1, 1);
-            panel1.Controls.Add(tab1);
+            TabInfoPanel.Controls.Add(tab1);
 
             tab2.Visible = false;
             tab2.Location = new Point(1, 1);
-            panel1.Controls.Add(tab2);
+            TabInfoPanel.Controls.Add(tab2);
 
             tab3.Visible = false;
             tab3.Location = new Point(1, 1);
-            panel1.Controls.Add(tab3);
+            TabInfoPanel.Controls.Add(tab3);
         }
 
 
@@ -69,6 +71,54 @@ namespace DELME_CustomTabControl
             CurrentTabSender.Location = new Point(CurrentTabSender.Location.X - 2, CurrentTabSender.Location.Y - 2);
         }
         #endregion
+
+        // Сворачивание TabControl (293px - default height)
+        private void ComboBoxBut_Click(object sender, EventArgs e)
+        {
+            int SpeedAnimation = 10; // less num = slower animation (default = 10)
+
+            if (OpenedComboBox)
+            {
+                DisableAll();
+
+                Tools1.Enabled = false;
+                Tools2.Enabled = false;
+                ClockTab.Enabled = false;
+
+
+                ComboBoxBut.Image = Properties.Resources.ArrowDown;
+
+                while (TabInfoPanel.Height > 3)
+                {
+                    TabInfoPanel.Height -= SpeedAnimation;
+                    Application.DoEvents();
+                }
+
+                TabInfoPanel.Height = 3;
+            }
+            else
+            {
+                Transform(Tools1);
+                Tools1_Click(Tools1, null);
+
+                Tools1.Enabled = true;
+                Tools2.Enabled = true;
+                ClockTab.Enabled = true;
+
+
+                ComboBoxBut.Image = Properties.Resources.ArrowUp;
+
+                while (TabInfoPanel.Height < 293)
+                {
+                    TabInfoPanel.Height += SpeedAnimation;
+                    Application.DoEvents();
+                }
+
+                TabInfoPanel.Height = 293;
+            }
+
+            OpenedComboBox = !OpenedComboBox;
+        }
 
 
         // Выбор вкладки
