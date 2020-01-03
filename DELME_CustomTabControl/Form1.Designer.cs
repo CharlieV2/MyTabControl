@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.TabInfoPanel = new System.Windows.Forms.Panel();
             this.Tools1 = new System.Windows.Forms.Button();
             this.Tools2 = new System.Windows.Forms.Button();
             this.ClockTab = new System.Windows.Forms.Button();
+            this.ComboBoxBut = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxBut)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // TabInfoPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Location = new System.Drawing.Point(12, 79);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 293);
-            this.panel1.TabIndex = 0;
+            this.TabInfoPanel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.TabInfoPanel.Location = new System.Drawing.Point(12, 79);
+            this.TabInfoPanel.Name = "TabInfoPanel";
+            this.TabInfoPanel.Size = new System.Drawing.Size(409, 293);
+            this.TabInfoPanel.TabIndex = 0;
             // 
             // Tools1
             // 
@@ -87,28 +89,42 @@
             this.ClockTab.UseVisualStyleBackColor = false;
             this.ClockTab.Click += new System.EventHandler(this.ClockTab_Click);
             // 
+            // ComboBoxBut
+            // 
+            this.ComboBoxBut.Image = global::DELME_CustomTabControl.Properties.Resources.ArrowUp;
+            this.ComboBoxBut.Location = new System.Drawing.Point(390, 47);
+            this.ComboBoxBut.Name = "ComboBoxBut";
+            this.ComboBoxBut.Size = new System.Drawing.Size(30, 30);
+            this.ComboBoxBut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ComboBoxBut.TabIndex = 4;
+            this.ComboBoxBut.TabStop = false;
+            this.ComboBoxBut.Click += new System.EventHandler(this.ComboBoxBut_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(632, 384);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ComboBoxBut);
+            this.Controls.Add(this.TabInfoPanel);
             this.Controls.Add(this.Tools1);
             this.Controls.Add(this.Tools2);
             this.Controls.Add(this.ClockTab);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxBut)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel TabInfoPanel;
         private System.Windows.Forms.Button Tools1;
         private System.Windows.Forms.Button Tools2;
         private System.Windows.Forms.Button ClockTab;
+        private System.Windows.Forms.PictureBox ComboBoxBut;
     }
 }
 
